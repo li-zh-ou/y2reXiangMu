@@ -9,27 +9,27 @@ import javax.validation.constraints.Past;
 import org.apache.ibatis.annotations.Param;
 
 public interface KechenMapper {
-    int countByExample(KechenExample example);
+	int countByExample(KechenExample example);
 
-    int deleteByExample(KechenExample example);
+	int deleteByExample(KechenExample example);
 
-    int deleteByPrimaryKey(Integer keid);
+	int deleteByPrimaryKey(Integer keid);
 
-    int insert(Kechen record);
+	int insert(Kechen record);
 
-    int insertSelective(Kechen record);
+	int insertSelective(Kechen record);
 
-    List<Kechen> selectByExample(KechenExample example);
-    
-    List<Kechen> selectKe(@Param("id") Integer id);
+	List<Kechen> selectByExample(KechenExample example);
 
-    Kechen selectByPrimaryKey(Integer keid);
+	List<Kechen> selectKe(@Param("id") Integer id);
 
-    int updateByExampleSelective(@Param("record") Kechen record, @Param("example") KechenExample example);
+	Kechen selectByPrimaryKey(Integer keid);
 
-    int updateByExample(@Param("record") Kechen record, @Param("example") KechenExample example);
+	int updateByExampleSelective(@Param("record") Kechen record, @Param("example") KechenExample example);
 
-    int updateByPrimaryKeySelective(Kechen record);
+	int updateByExample(@Param("record") Kechen record, @Param("example") KechenExample example);
 
-    int updateByPrimaryKey(Kechen record);
+	int updateByPrimaryKeySelective(Kechen record);
+
+	int updateByPrimaryKey(Kechen record);
 }
